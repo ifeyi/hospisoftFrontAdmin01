@@ -1682,6 +1682,37 @@ select, select:hover, select:focus{
     gap: 16px;
 }
 
+
+.input {
+    padding: 1rem 2rem;
+    background-color: var(--hospisoftPureWhite);
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 0 3px var(--hospisoftWhite);
+    transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    width: 25%;
+    text-align: center;
+    text-align-last: center ;
+}
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+.input:focus, .input:hover{
+    box-shadow: 0 0 0 3px var(--hospisoftShadowBlue);
+    width: 25%;
+}
+  .input:disabled {
+    color: #89888b;
+  }
+  .show {
+    display: inline-flex;
+  }
+  .hide {
+    display: none;
+  }
+
 @media screen and (max-width: 800px) and (min-width: 300px){
 
     #hospisoftDashBoardSideHeader{
