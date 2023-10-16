@@ -26,6 +26,10 @@
 
 }
 
+#hospisoftLogo img, #hospisoftHeaderLeft img{
+    height: 48px;
+}
+
 body{
     color: var(--hospisoftDarkBlue);
     font-family: 'Lato', sans-serif;
@@ -300,6 +304,7 @@ a.hospisoftFlex{
     padding: 16px 0;
     position: relative;
     z-index: 99;
+    background-color: var(--hospisoftPureWhite);
 }
 #hospisoftHeader .hospisoftContainer > .hospisoftFlex{
     justify-content: space-between;
@@ -316,11 +321,7 @@ a.hospisoftFlex{
 }
 
 /* LOGO */
-#hospisoftLogo .st0,#hospisoftLogo .st1{fill:var(--hospisoftBlue);}
 
-#hospisoftLogo svg{
-    height: 32px;
-}
 
 #hospisoftDashBoardSideHeader{
     position: fixed;
@@ -331,17 +332,10 @@ a.hospisoftFlex{
     z-index: 999;
 }
 
-#hospisoftLogo{
-    position: relative;
-    z-index: 99999;
-}
-.hospisoftDashboardPages #hospisoftLogo {
-    padding-top: 12px;
-}
 
-.hospisoftDashboardPages .hospisoftCollapsed #hospisoftLogo {
-    padding: 12px;
-}
+
+
+
 
 #hospisoftHeaderRight #hospisoftIconLArrowRight{
     height: 16px;
@@ -1248,10 +1242,7 @@ sup{
   }
 
 
-  .hospisoftCollapsed #hospisoftDashBoardSideLinks ul li a p,
-  .hospisoftCollapsed #hospisoftLogo .hospisoftLogoText{
-    display: none;
-  }
+
   .hospisoftCollapsed .hospisoftRoundedPureWhite{
     transform: rotate(180deg);
   }
@@ -1924,9 +1915,7 @@ select, select:hover, select:focus{
     .hospisoftFlex > .hospisoftHeroInnerText, .hospisoftFlex > figure {
        width: 100%;
     }
-    #hospisoftLogo{
-        width:50px;
-    }
+
 
     .hospisoftLinkGold{
         max-width: 90%;
@@ -1995,9 +1984,7 @@ select, select:hover, select:focus{
     .hospisoftHeroInnerText > .hospisoftFlex a.hospisoftBtn {
         width: 100%;
     }
-    #hospisoftLogo svg {
-        height: 56px;
-    }
+
     #hospisoftTechnologie .hospisoftFreeFormDiv,
     #hospisoftTechnologie .hospisoftFreeFormDiv2,
     #hospisoftTechnologie .hospisoftFreeFormDiv3{
@@ -2085,10 +2072,7 @@ select, select:hover, select:focus{
     .hospisoftMobile{
         display: block;
     }
-    #hospisoftLogo h1 a{
-        margin: auto;
-        display: block;
-    }
+
     #hospisoftDashBoardCollapse{display: none;}
 }
 
