@@ -1,0 +1,2149 @@
+:root{
+    --hospisoftBlue: #1D71B8;
+    --hospisoftDarkerBlue: #151C33;
+    --hospisoftGold: #CC9900;
+    --hospisoftDarkBlue: #1C2645;
+    --hospisoftShadowBlue: #ACC7E9;
+    --hospisoftLightBlue: #5A94C3;
+    --hospisoftYellow: #FBCE75;
+    --hospisoftWhite: #F0F7FF;
+    --hospisoftPureWhite: #FFF;
+    --hospisoftBlack: #020203;
+    --hospisoftGray: #999;
+    --hospisoftLightGray: #CCC;
+    --hospisoftLighterGray: #F0F0F0;
+    --hospisoftDarkGray: #777;
+    --hospisoftDarkerGray: #444;
+    --hospisoftTransition: all .5s ease-in-out;
+    --hospisoftBoxShadow: 0 0 100px 0 rgba(0, 0, 0, .1);
+}
+
+*, html{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    transition: var(--hospisoftTransition);
+
+}
+
+body{
+    color: var(--hospisoftDarkBlue);
+    font-family: 'Lato', sans-serif;
+    background-color: var(--hospisoftWhite);
+    line-height: 1.5;
+}
+
+
+.hospisoftIcon{
+    height: 16px;
+    fill: var(--hospisoftBlue);
+}
+#hospisoftIconBell,#hospisoftIconProfile{
+    height: 24px;
+}
+/*
+
+hospisoftLoadingDiv
+
+*/
+
+#hospisoftLoadingDiv{
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--hospisoftWhite);
+}
+#hospisoftIconLogoLoading{
+    position: absolute;
+    z-index: 999999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 150px;
+}
+#hospisoftIconLogoLoading .st0,
+#hospisoftIconLogoLoading .st1,
+#hospisoftIconLogoLoading .st2,
+#hospisoftIconMobileLogo .st0, 
+#hospisoftIconMobileLogo .st1,
+#hospisoftIconMobileLogo .st2{fill:var(--hospisoftBlue);}
+ 
+/*
+
+hospisoftLoadingDiv
+
+*/
+
+h1, h2, h3, h4, h5, h6{
+    line-height: 1.1;
+    margin-bottom: 0;
+}
+h2{
+    font-size: 2.6rem;
+}
+h3{
+    font-size: 1.4rem;
+}
+h4{
+    font-size: 1.2rem;
+}
+.h2Blue, .h3Blue, .h4Blue{
+    color: var(--hospisoftBlue);
+    margin-bottom: 0;
+}
+.h2White, .h3White, .h4White{
+    color: var(--hospisoftWhite);
+}
+
+em{
+    color: var(--hospisoftGray);
+}
+
+ul{
+    list-style:none;
+}
+input, button,
+input:hover, button:hover,
+input:focus, button:focus,
+select, select:hover, select:focus{
+    outline:0;
+    border:none;
+    transition: var(--hospisoftTransition);
+}
+input, input:hover, input:focus, input:active{
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    width: 90%;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px var(--hospisoftWhite) inset !important;
+}
+a, a:hover, a:visited, a:focus, a:link{
+    outline:none;
+    transition: var(--hospisoftTransition);
+}
+a, a:visited{
+    color: var(--hospisoftLightBlue);
+    text-decoration: none;
+    transition: var(--hospisoftTransition);
+}
+a:hover, a:focus, a.hospisoftBtn:hover, a.hospisoftBtn:focus{
+    color: var(--hospisoftWhite);
+    text-decoration: underline;
+    transition: var(--hospisoftTransition);
+}
+a.hospisoftBtn, a.hospisoftBtn:visited, .hospisoftBtn{
+    color: var(--hospisoftBlue);
+    font-weight: 600;
+    text-decoration: none;
+    transition: var(--hospisoftTransition);
+}
+a.hospisoftBtnGray, a.hospisoftBtnGray:visited{
+    color: var(--hospisoftBlue);
+     transition: var(--hospisoftTransition);
+}
+
+.hospisoftBtn{
+    padding: 16px;
+    border-radius: 24px;
+    cursor: pointer;
+    color: var(--hospisoftBlue);
+    transition: var(--hospisoftTransition);
+    text-decoration: none !important;
+}
+
+.hospisoftBtnGray{
+    background-color: var(--hospisoftPureWhite);
+    color: var(--hospisoftBlue);
+    transition: var(--hospisoftTransition);
+    text-decoration: none;
+}
+.hospisoftBtnGray:hover, .hospisoftBtnGray:focus{
+    background-color: var(--hospisoftShadowBlue);
+    text-decoration: none;
+}
+.hospisoftBtnBlue, #hospisoftPagination .hospisoftActive{
+    background-color: var(--hospisoftBlue);
+    color: var(--hospisoftWhite) !important;
+    transition: var(--hospisoftTransition);
+    text-decoration: none;
+}
+.hospisoftBtnGold, a.hospisoftBtnGold{
+    background: var(--hospisoftBlue);
+    color: var(--hospisoftWhite);
+    transition: var(--hospisoftTransition);
+    text-decoration: none !important;
+}
+.hospisoftBtnGold:hover, a.hospisoftBtnGold:hover,
+.hospisoftBtnGold:focus, a.hospisoftBtnGold:focus{
+    text-decoration: none;
+    background: var(--hospisoftLightBlue);
+}
+
+.hospisoftBtnBlue:hover, .hospisoftBtnBlue:focus,
+#hospisoftPagination .hospisoftActive:hover,
+#hospisoftPagination .hospisoftActive:focus{
+    background-color: var(--hospisoftDarkBlue);
+    text-decoration: none;
+}
+
+.hospisoftLinkGold, .hospisoftLinkGold:visited{
+    font-weight: bold;
+    color: var(--hospisoftGold);
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    width: max-content;
+    transition: var(--hospisoftTransition);
+}
+.hospisoftLinkGold:hover, .hospisoftLinkGold:focus{
+    font-weight: bold;
+    color: var(--hospisoftBlue);
+}
+.hospisoftLinkGold #hospisoftIconLArrowRight,
+.hospisoftLinkGold:visited #hospisoftIconLArrowRight{
+    height: 14px;
+    fill: var(--hospisoftGold);
+
+}
+.hospisoftLinkGold:hover #hospisoftIconLArrowRight,
+.hospisoftLinkGold:focus #hospisoftIconLArrowRight{
+    fill: var(--hospisoftBlue);
+}
+
+.hospisoftLinkGold p{
+    width: max-content;
+}
+
+button, a, p{
+    height: max-content;
+    width: max-content;
+}
+p{
+    width: 100%;
+}
+blockquote{
+    position: relative;
+    padding: 3rem 4rem;
+    background-color: var(--hospisoftBlue);
+    color: var(--hospisoftWhite);
+    font-size: 1.5rem;
+    border-radius: 50px;
+    font-weight: bold;
+}
+blockquote::before{
+    content: '"';
+    position: absolute;
+    top: 65px;
+    left: -10px;
+    color: var(--hospisoftGold);
+    font-weight: bold;
+    font-size: 300px;
+    line-height:0;
+    font-family: sans-serif;
+}
+blockquote::after{
+    content: '';
+    position: absolute;
+    top: 99%;
+    right: 15%;
+    border-top: 35px solid var(--hospisoftBlue);
+    border-bottom: 0 solid transparent;
+    border-left: 0 solid transparent;
+    border-right: 50px solid transparent;
+}
+.hospisoftFlex{
+    display: flex;
+}
+.hospisoftGrid{
+    height: 100%;
+    display: grid;
+}
+a.hospisoftFlex{
+    gap: 5px;
+    align-items: center;
+}
+
+.hospisoftBloc{
+    padding: 2rem 0;
+}
+.hospisoftBlocMargin{
+    margin: 72px 0 0 0;
+}
+.hospisoftBlocTop{
+    margin-top: 72px;
+}
+
+.hospisoftModal{
+    padding: 3rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--hospisoftWhite);
+    border-radius: 4rem;
+    max-width: 300px;
+    box-shadow: 0 0 100px 0 rgba(0, 0, 0, .1);
+    z-index: 9;
+}
+
+.hospisoftContainer{
+    width: 88%;
+    margin: auto;
+}
+
+/* START HEADER */
+
+#hospisoftHeader{
+    padding: 16px 0;
+    position: relative;
+    z-index: 99;
+}
+#hospisoftHeader .hospisoftContainer > .hospisoftFlex{
+    justify-content: space-between;
+}
+#hospisoftHeader .hospisoftContainer > .hospisoftFlex .hospisoftFlex{
+    gap: 10px;
+}
+
+#hospisoftHeader.hospisoftFixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    background-color: var(--hospisoftPureWhite);
+    width: 100%;
+    box-shadow: 0 0 100px 0 rgba(0, 0, 0, .1);
+}
+
+/* LOGO & NAVIGATION LINKS */
+
+#hospisoftHeaderLeft{
+    align-items: center;
+}
+
+/* LOGO */
+#hospisoftLogo .st0,#hospisoftLogo .st1{fill:var(--hospisoftBlue);}
+
+#hospisoftLogo svg{
+    height: 32px;
+}
+
+#hospisoftDashBoardSideHeader{
+    position: fixed;
+    top:0;
+    left:0;
+    padding: 16px 16px 0 32px;
+    background-color: var(--hospisoftPureWhite);
+    z-index: 999;
+}
+#hospisoftLogo{
+    position: relative;
+    z-index: 99999;
+}
+.hospisoftDashboardPages #hospisoftLogo {
+    padding-top: 12px;
+}
+
+.hospisoftDashboardPages .hospisoftCollapsed #hospisoftLogo {
+    padding: 12px;
+}
+
+#hospisoftHeaderRight #hospisoftIconLArrowRight{
+    height: 16px;
+    fill: var(--hospisoftBlue);
+}
+
+#hospisoftHeader .hospisoftContainer #hospisoftHeaderRight .hospisoftBtnGold{
+    gap:2px;
+}
+/* Liens Accueil et Prix */
+
+#hospisoftHeader .hospisoftContainer #hospisoftHeaderNavLinks ul{
+ gap: 32px;
+}
+#hospisoftHeader .hospisoftContainer #hospisoftHeaderLeft{
+    gap: 24px;
+}
+
+/* MENU BUTTON */
+header #hospisoftX, header #hospisoftY, header #hospisoftZ{
+    width: 20px;
+    transition: all .2s ease-out;
+    height: 4px;
+    background-color: var(--hospisoftBlack);
+}
+    
+.collapse{
+    top: -20px;
+    -webkit-transition: all 70ms ease-out;
+       -moz-transition: all 70ms ease-out;
+        -ms-transition: all 70ms ease-out;
+         -o-transition: all 70ms ease-out;
+            transition: all 70ms ease-out;
+}
+.rotate30, .rotate150, .rotate45, .rotate135{top:9px;}
+.rotate30{
+    -webkit-transform: rotate(30deg); 
+       -moz-transform: rotate(30deg); 
+        -ms-transform: rotate(30deg); 
+         -o-transform: rotate(30deg); 
+            transform: rotate(30deg);
+            
+    -webkit-transition: all 50ms ease-out;
+       -moz-transition: all 50ms ease-out;
+        -ms-transition: all 50ms ease-out;
+         -o-transition: all 50ms ease-out;
+            transition: all 50ms ease-out;          
+}
+div.rotate150{
+    -webkit-transform: rotate(150deg); 
+       -moz-transform: rotate(150deg); 
+        -ms-transform: rotate(150deg); 
+         -o-transform: rotate(150deg); 
+            transform: rotate(150deg);
+            
+    -webkit-transition: all 50ms ease-out;
+       -moz-transition: all 50ms ease-out;
+        -ms-transition: all 50ms ease-out;
+         -o-transition: all 50ms ease-out;
+            transition: all 50ms ease-out;          
+}
+div.rotate45{
+      -webkit-transform: rotate(45deg);
+         -moz-transform: rotate(45deg); 
+          -ms-transform: rotate(45deg); 
+           -o-transform: rotate(45deg); 
+              transform: rotate(45deg);
+              
+    -webkit-transition: all 100ms ease-out;
+       -moz-transition: all 100ms ease-out;
+        -ms-transition: all 100ms ease-out;
+         -o-transition: all 100ms ease-out;
+            transition: all 100ms ease-out;         
+}
+div.rotate135{
+    -webkit-transform: rotate(135deg); 
+      -moz-transform: rotate(135deg); 
+       -ms-transform: rotate(135deg); 
+        -o-transform: rotate(135deg); 
+           transform: rotate(135deg);  
+           
+    -webkit-transition: all 100ms ease-out;
+       -moz-transition: all 100ms ease-out;
+        -ms-transition: all 100ms ease-out;
+         -o-transition: all 100ms ease-out;
+            transition: all 100ms ease-out;         
+}
+.rotate180{
+    -webkit-transform: rotate(180deg); 
+      -moz-transform: rotate(180deg); 
+       -ms-transform: rotate(180deg); 
+        -o-transform: rotate(180deg); 
+           transform: rotate(180deg);  
+           
+    -webkit-transition: all 100ms ease-out;
+       -moz-transition: all 100ms ease-out;
+        -ms-transition: all 100ms ease-out;
+         -o-transition: all 100ms ease-out;
+            transition: all 100ms ease-out;         
+}
+#hospisoftMenuIcon{
+    height: 24px;
+}
+header .xhover{
+    width: 35px;
+    position: relative;
+}
+header #hospisoftY, header #hospisoftZ{
+    margin-top:.35rem;
+}
+
+/* NOUS SOUTENIR BUTTON */
+#hospisoftIconheart{
+    height: 24px;
+}
+#hospisoftHeader .hospisoftFlex .hospisoftBtn{
+    align-items: center;
+    gap: 5px;
+}
+
+/* hospisoftNavigation */
+#hospisoftMenuOpened{
+    background-color: var(--hospisoftWhite);
+    width: max-content;
+    height: 100%;
+    box-shadow: 5px 0 100px 0 rgba(0, 0, 0, .1);
+    position: fixed;
+    top: 0;
+    left: -999px;
+    padding-top: 75px;
+    z-index: 9;
+    visibility: hidden;
+    overflow-y: scroll;
+}
+#hospisoftMenuOpened ul li a{
+    padding: 2rem 4vw;
+    width: 100%;
+    color: var(--hospisoftBlue);
+    display: block;
+}
+#hospisoftMenuOpened ul{
+    padding: 1rem 0;
+}
+#hospisoftMenuOpened ul li:nth-child(even){
+    background-color: var(--hospisoftLighterGray);
+}
+#hospisoftMenuOpened ul li a:hover,
+#hospisoftMenuOpened ul li a:focus{
+    background-color: var(--hospisoftBlue);
+    color: var(--hospisoftWhite);
+}
+
+#hospisoftMenuSocials{
+    gap: 10px;
+    padding: 2rem 4vw;
+    border-top: 1px solid var(--hospisoftLighterGray);
+}
+#hospisoftMenuOpened svg{
+    height: 35px;
+}
+#hospisoftMenuOpened a svg,
+#hospisoftMenuOpened a svg {
+    fill: var(--hospisoftBlue);
+}
+#hospisoftMenuOpened a:hover svg,
+#hospisoftMenuOpened a:focus svg {
+    fill: var(--hospisoftGold);
+}
+
+#hospisoftMenuOpened.hospisoftNavShown{
+    left: 0;
+    visibility: visible;
+}
+
+/* END HEADER */
+
+/* MAIN SECTION */
+
+/* hospisoftHeroSection */
+#hospisoftHeroSection{
+    position: relative;
+    background-color: var(--hospisoftWhite);
+}
+#hospisoftIconArrowDown{
+    height: 16px;
+}
+.hospisoftHeroInnerText{
+    position: relative;
+    border-radius: 48px 0 48px 48px;
+    background-color: var(--hospisoftPureWhite);
+    flex-direction: column;
+    gap: 16px;
+    padding: 32px 64px 32px 32px;
+}
+.hospisoftHeroInnerText > .hospisoftFlex{
+    gap: 16px;
+    align-items: center;
+}
+.hospisoftHeroInnerText > p{
+    max-width: 80%;
+}
+.hospisoftFreeFormDiv, .hospisoftFreeFormDiv2,
+ .hospisoftFreeFormDiv3, .hospisoftFreeFormDiv4{
+    position: absolute;
+}
+#hospisoftHeroSection .hospisoftHeroInnerText .hospisoftFreeFormDiv{
+    background-color: var(--hospisoftWhite);
+    height: 64%;
+    width: 8%;
+    bottom:0;
+    right:0;
+    z-index: 6;
+    border-radius: 64px 0 0 0;
+}
+#hospisoftHeroSection .hospisoftHeroInnerText .hospisoftFreeFormDiv2{
+    background-color: var(--hospisoftPureWhite);
+    height: 36%;
+    width: 8%;
+    top:0;
+    left:100%;
+    z-index: 7;
+    border-radius: 0 64px 64px 0;
+}
+#hospisoftHeroSection .hospisoftHeroInnerText .hospisoftFreeFormDiv3{
+    background-color: var(--hospisoftPureWhite);
+    height: 36%;
+    width: 8%;
+    bottom:0;
+    right:8%;
+    z-index: 9;
+    border-radius: 0 64px 64px 0;
+}
+#hospisoftHeroSection .hospisoftHeroInnerText .hospisoftFreeFormDiv4{
+    background-color: var(--hospisoftWhite);
+    height: 16%;
+    width: 8%;
+    bottom:0;
+    right:8%;
+    z-index: 8;
+}
+#hospisoftHeroText #hospisoftIconGifts{
+    height: 128%;
+    top:0;
+    right:0;
+    z-index: 99;
+    position: absolute;
+}
+
+#hospisoftHeroSection .hospisoftFlex > .hospisoftHeroInnerText {
+    flex: 0 1 64%;
+}
+.hospisoftFlex > figure {
+    flex: 0 1 32%;
+}
+
+#hospisoftHeroSection .hospisoftContainer{
+    position: relative;
+    z-index: 5;
+}
+#hospisoftHeroText{
+    position: relative;
+    width: 100%;
+    z-index: 5;
+}
+/*  hospisoftTechnologie  */
+
+#hospisoftTechnologie .hospisoftFlex > .hospisoftHeroInnerText,
+.hospisoftFlex #hospisoftIconTechWrapper{
+    flex: 0 1 50%;
+}
+
+#hospisoftTechnologie .hospisoft1920{
+    display: none;
+}
+#hospisoftTechnologie .hospisoft1366{
+    display: block;
+}
+
+#hospisoftTechnologie > #hospisoftHeroText >
+.hospisoftContainer > .hospisoftFlex{
+    align-items: end;
+}
+
+#hospisoftTechnologie .hospisoftHeroInnerText{
+    border-radius: 0 64px 64px 0;
+    padding: 112px 32px 32px 32px;
+}
+
+#hospisoftIconTech{
+    width: 100%;
+    height: auto;
+}
+#hospisoftIconTechWrapper{
+    border-radius: 64px 64px 0 64px;
+    padding: 32px 32px 32px 32px;
+    background-color: var(--hospisoftPureWhite);
+}
+
+#hospisoftTechnologie .hospisoftFreeFormDiv {
+    background-color: var(--hospisoftWhite);
+    height: 12%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 6;
+    border-radius: 0 64px 0 64px;
+}
+#hospisoftTechnologie .hospisoftFreeFormDiv2 {
+    background-color: var(--hospisoftPureWhite);
+    height: 12%;
+    width: 100%;
+    left: 0;
+    top:12%;
+    z-index: 8;
+    border-radius: 0 64px 0 64px;
+}
+#hospisoftTechnologie .hospisoftFreeFormDiv3 {
+    background-color: var(--hospisoftWhite);
+    height: 12%;
+    width: 16%;
+    right: 0;
+    top: 12%;
+    z-index: 7;
+    border-radius: 0 0 0 0;
+}
+
+/*hospisoftPrices*/
+
+#hospisoftPrices{
+    padding-bottom: 6rem;
+}
+#hospisoftPrices > .hospisoftContainer > .hospisoftFlex{
+    gap: 32px;
+}
+.hospisoftPrices .hospisoftFreeFormDiv{
+    background-color: var(--hospisoftPureWhite);
+    height: 16%;
+    width: 64%;
+    left: 0;
+    top: 100%;
+    z-index: 6;
+    border-radius: 0 0 64px 64px;
+}
+.hospisoftPrices .hospisoftFreeFormDiv2{
+    background-color: var(--hospisoftWhite);
+    height: 12%;
+    width: 36%;
+    right: 0;
+    bottom: 0;
+    z-index: 7;
+    border-radius: 64px 0 0 0;
+}
+.hospisoftPrices .hospisoftFreeFormDiv3{
+    background-color: var(--hospisoftWhite);
+    height: 12%;
+    width: 12%;
+    right: 0;
+    bottom: 12%;
+    z-index: 7;
+    border-radius: 0 0 0 0;
+}
+.hospisoftPrices .hospisoftFreeFormDiv4{
+    background-color: var(--hospisoftPureWhite);
+    height: 12%;
+    width: 36%;
+    right: 0;
+    bottom: 12%;
+    z-index: 8;
+    border-radius: 0 0 64px 0;
+}
+
+.hospisoftPricePlan{
+    color: var(--hospisoftLightBlue);
+    font-size: 1rem;
+    font-weight: normal;
+}
+.hospisoftPriceCost{
+    color: var(--hospisoftGold);
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: -2px;
+}
+.hospisoftPriceDuration{
+    color: var(--hospisoftShadowBlue);
+    font-size: 1.32rem;
+    font-weight: bold;
+}
+.rewardPriceDescription{
+    color: var(--hospisoftBlue);
+    font-size: 1rem;
+    font-weight: normal;
+}
+sup{
+    font-weight: bold;
+    color: var(--hospisoftGold);
+}
+
+.hospisoftRecommended{
+    background-color: var(--hospisoftBlue);
+}
+.hospisoftRecommended .hospisoftPricePlan{
+    color: var(--hospisoftShadowBlue);
+}
+.hospisoftRecommended .hospisoftPriceCost{
+    color: var(--hospisoftYellow);
+}
+.hospisoftRecommended .hospisoftPriceDuration{
+    color: var(--hospisoftShadowBlue);
+}
+.hospisoftRecommended .rewardPriceDescription{
+    color: var(--hospisoftWhite);
+}
+.hospisoftRecommended sup{
+    color: var(--hospisoftYellow);
+}
+#hospisoftPrices .hospisoftRecommended .hospisoftFreeFormDiv{
+    background-color: var(--hospisoftBlue);
+}
+#hospisoftPrices .hospisoftRecommended .hospisoftFreeFormDiv4{
+    background-color: var(--hospisoftBlue);
+}
+
+/* hospisoftAlternative */
+
+#hospisoftAlternative #hospisoftHeroText #hospisoftAlternativeIconWrapper,
+#hospisoftAlternative .hospisoftFlex > .hospisoftHeroInnerText{
+    flex: 0 1 50%;
+}
+#hospisoftAlternativeIcon{
+    height: 100%;
+}
+#hospisoftAlternative > #hospisoftHeroText >
+.hospisoftContainer > .hospisoftFlex{
+    align-items:start;
+}
+
+#hospisoftAlternativeIconWrapper{
+    position: relative;
+    border-radius: 0 48px 48px 48px;
+    padding: 32px 32px 32px 32px;
+    background-color: var(--hospisoftPureWhite);
+}
+
+#hospisoftAlternative .hospisoftFreeFormDiv{
+    background-color: var(--hospisoftDarkBlue);
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 8%;
+    z-index:6;
+    border-radius: 0 48px 0 0;
+}
+#hospisoftAlternative .hospisoftFreeFormDiv2{
+    background-color: var(--hospisoftPureWhite);
+    left: 0;
+    bottom: 8%;
+    width: 100%;
+    height: 8%;
+    z-index:7;
+    border-radius: 0 0 0 48px;
+}
+#hospisoftAlternative .hospisoftFreeFormDiv3{
+    background-color: var(--hospisoftDarkBlue);
+    left: 0;
+    bottom: 8%;
+    width: 8%;
+    height: 8%;
+    z-index:6;
+    border-radius: 0 0 0 0;
+}
+
+#hospisoftMain .hospisoftBlueDiv{
+    background-color: var(--hospisoftDarkBlue);
+    width: 100%;
+    padding: 4rem 0 8rem;
+}
+
+.hospisoftPastille{
+    position: absolute;
+    color: var(--hospisoftWhite);
+    background-color: var(--hospisoftLightBlue);
+    display: block;
+    padding: 2px 4px;
+    border-radius: 8px;
+    font-size: .64rem;
+    right: 48px;
+    top: 48px;
+}
+
+.hospisoftHeading{
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 32px;
+    margin-bottom: 32px;
+    width: 100%;
+}
+.hospisoftHeading p{
+    width: auto;
+}
+
+/* hospisoftFaq */
+
+#hospisoftAccordion{
+    background-color: var(--hospisoftDarkerBlue);
+    color: var(--hospisoftWhite);
+    border-radius: 2rem 2rem 2rem 2rem;
+  }
+#hospisoftAccordion p{
+    color: var(--hospisoftBlack);
+    padding: .32rem 3rem;
+}
+#hospisoftAccordion p:last-child{
+    color: var(--hospisoftBlack);
+    padding: .32rem 3rem 1.32rem 3rem;
+}
+#hospisoftAccordion p:first-child{
+    color: var(--hospisoftBlack);
+    padding: 1.32rem 3rem .32rem 3rem;
+}
+  .hospisoftAccordionWrapper{
+    padding: .25rem;
+  }
+  .hospisoftAccordionWrapper .hospisoftAccordionTitle h3{
+    margin: 0;
+    padding: 1rem 2rem 1.5rem;
+    position: relative;
+    cursor: pointer;
+    width: 98%;
+  }
+  .hospisoftAccordionWrapper:first-child .hospisoftAccordionTitle h3{
+    padding: 1.5rem 2rem 1.35rem;
+  }
+  
+  .hospisoftAccordionWrapper .hospisoftAccordionText{
+    padding: 1.32rem 0;
+    background-color: var(--hospisoftWhite);
+    transition: var(--transition);
+  }
+  .hospisoftAccordionText ul{
+    color: var(--hospisoftBlack);
+    padding: 1rem 5rem;
+    list-style-type: disc;
+  }
+  .hospisoftAccordionText ul{
+    line-height: 1.8;
+  }
+  .hospisoftAccordionWrapper:last-child .hospisoftAccordionText{
+    padding-bottom: 2.56rem;
+  }
+.hospisoftAccordionWrapper:last-child .hospisoftAccordionTextClose{
+    height:0;
+    padding: 0 0;
+    overflow: hidden;
+    transition: var(--transition);
+  }
+  .hospisoftAccordionWrapper .hospisoftAccordionText p:nth-child(2){
+    background-color: var(--hospisoftWhite);
+    color: var(--hospisoftBlue);
+    padding: 2rem;
+  }
+  .hospisoftAccordionWrapper:last-child .hospisoftAccordionText{
+    overflow: hidden;
+    border-radius: 0 0 30px 30px;
+  }
+.hospisoftAccordionWrapper .hospisoftAccordionTextClose{
+    height:0;
+    padding: 1px 0;
+    overflow: hidden;
+    transition: var(--transition);
+  }
+  
+  #hospisoftCaretDown{
+    fill: var(--hospisoftWhite);
+    height: 15px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .hospisoftpayments{
+    justify-content: center;
+    width: 50%;
+    margin: auto;
+  }
+  .hospisoftpayments a img{
+    max-width: 100%;
+  }
+  /* hospisoftIconLock */
+
+    #hospisoftIconLock{
+        height: 16px;
+        fill: var(--hospisoftWhite);
+    }
+
+
+    #hospisoftIconPiggy{
+        width:300px;
+        display: block;
+        margin: auto;
+    }
+    .hospisoftpiggylink{
+        margin: auto;
+    }
+    .hospisoftPiggyH3{
+        width: 50% !important;
+    }
+
+  /* hospisoftIconLock */
+
+  /* SIGN IN  */
+  #hospisoftIconSign{
+    width:100%;
+    height: auto;
+  }
+  #hospisoftForm{
+    position: relative;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 2rem;
+    margin-bottom: 96px;
+    background-color: var(--hospisoftPureWhite);
+    padding: 64px 64px;
+    border-radius: 64px;
+  }
+  .hospisoftFormSteps{
+    flex-direction: column;
+    gap: 24px;
+  }
+  .formbottom{
+    padding-left: 32px;
+  }
+  #hospisoftForm .hospisoftFreeFormDiv{
+    background-color: var(--hospisoftPureWhite);
+    height: 12%;
+    width: 72%;
+    left: 0;
+    top: 100%;
+    z-index: 6;
+    border-radius: 0 0 64px 64px;
+}
+#hospisoftForm .hospisoftFreeFormDiv2{
+    background-color: var(--hospisoftWhite);
+    height: 8%;
+    width: 28%;
+    right: 0;
+    bottom: 0;
+    z-index: 7;
+    border-radius: 64px 0 0 0;
+}
+#hospisoftForm .hospisoftFreeFormDiv3{
+    background-color: var(--hospisoftWhite);
+    height: 8%;
+    width: 8%;
+    right: 0;
+    bottom: 8%;
+    z-index: 7;
+    border-radius: 0 0 0 0;
+}
+#hospisoftForm .hospisoftFreeFormDiv4{
+    background-color: var(--hospisoftPureWhite);
+    height: 8%;
+    width: 28%;
+    right: 0;
+    bottom: 8%;
+    z-index: 8;
+    border-radius: 0 0 64px 0;
+}
+  .hospisoftAuthentification #hospisoftIconLArrowRight,
+  .hospisoftAuthentification #hospisoftIconLArrowLeft{
+      height: 16px;
+      fill: var(--hospisoftBlue);
+  }
+  .hospisoftAuthentification label{
+    flex-direction: column;
+    gap: 12px;
+    color: var(--hospisoftBlue);
+  }
+  .hospisoftAuthentification label strong{
+    padding-left: 16px;
+  }
+  .hospisoftAuthentification fieldset{
+      border: 0;
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: auto;
+      z-index: 1;
+  }
+  .hospisoftFormFlex{
+    align-items: center;
+  }
+  .hospisoftAuthentification .hospisoftDisplayOutOfSight{
+      opacity:0;
+      height:0;
+      z-index: -1;
+      left: -9999px;
+      position: absolute;
+  }
+  .hospisoftAuthentification #hospisoftHeroInnerText{
+    flex: 0 1 48%;
+  }
+  .hospisoftAuthentification figure{
+    flex: 0 1 52%;
+  }
+  
+  .hospisoftFormButtons{
+      gap: 10px;
+      position: relative;
+      z-index: 99;
+  }
+
+    .hospisoftInput,.hospisoftInput:hover, .hospisoftInput:focus{
+        border-radius: 24px;
+        padding: 1rem 2rem;
+        background-color: var(--hospisoftPureWhite);
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 0 0 3px var(--hospisoftWhite);
+        transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+    .hospisoftInputFocus{
+        box-shadow: 0 0 0 3px var(--hospisoftShadowBlue);
+    }
+    #hospisoftInputWrapper{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #hospisoftEyeIcon svg{
+        fill: var(--hospisoftShadowBlue);
+        height: 15.5px;
+        cursor: pointer;
+    }
+
+    .hospisoftFormBloc a, .hospisoftFormBloc a:visited{
+        color: var(--hospisoftRed);
+        padding:0 1rem;
+        display: block;
+        text-decoration: none;
+        transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+    }
+    .hospisoftFormBloc a:hover, .hospisoftFormBloc a:focus{
+        text-decoration: underline;
+    }
+    .hospisoftContainer .hospisoftFlex #hospisoftHeroInnerText
+    #hospisoftForm #hospisoftSubmit{
+        width:100%;
+        justify-content: center;
+        align-items: center;
+        gap: 4px;
+        height: 56px;
+    }
+    .hospisoftContainer .hospisoftFlex #hospisoftHeroInnerText
+    #hospisoftForm #hospisoftSubmit p{
+        width: fit-content;
+    }
+    #hospisoftRemember{
+        justify-content: space-between;
+        padding: 0 16px;
+    }
+    #hospisoftRemember label{
+        flex-direction: row;
+        gap:8px;
+    }
+    #hospisoftRemember label strong{
+        padding-left: 0;
+    }
+    #hospisoftRemember label input{
+        width: auto;
+    }
+
+    .hospisoftSocialAuth{
+        gap: 16px;
+    }
+  /* SIGN IN */
+
+  /*404*/
+  #hospisoft404,#hospisoft404Text{
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 32px;
+  }
+  #hospisoft404 h2{
+    margin: 32px auto 0;
+    width: 64%;  
+  }
+
+  #hospisoftIcon404{
+    width: 32%;
+    height: auto;
+  }
+  /*404*/
+
+  /* DASHBOARD */
+  
+  #hospisoftDashBoardSide{
+    position: relative;
+    background-color: var(--hospisoftPureWhite);
+    padding: 16px 32px 32px 32px;
+    height: auto;
+    border-right: 2px solid var(--hospisoftWhite);
+  }
+  .hospisoftRoundedPureWhite{
+    background-color: var(--hospisoftPureWhite);
+    border: 2px solid var(--hospisoftWhite);
+    border-radius: 18px;
+    padding: 10px 14px 10px 12px;
+    cursor: pointer;
+    transition: var(--transition);
+    line-height: 0;
+    position: absolute;
+    right: -48px;
+    top:8px;
+    z-index: 99999;
+  }
+  #hospisoftIconStar{
+    transition: var(--transition);
+    height: 16px;
+    fill: var(--hospisoftBlue);
+  }
+  .hospisoftRoundedPureWhite:hover,
+  .hospisoftRoundedPureWhite:focus{
+    background-color: var(--hospisoftWhite);
+    border: 2px solid var(--hospisoftShadowBlue);
+  }
+
+  #hospisoftDashBoardSide #hospisoftLogo #hospisoftIconLogo{
+    height: 32px;
+    transition: var(--transition);
+  }
+  #hospisoftDashBoardSide .hospisoftIcon{
+    height: 16px;
+  }
+
+  #hospisoftDashboard{
+    display: flex;
+    justify-content: space-between;
+    transition: var(--transition);
+  }
+
+  .hospisoftBtnWhite{
+    background-color: var(--hospisoftPureWhite);
+    padding: 12px 16px 10px;    
+    border-radius: 24px;
+    cursor: pointer;
+  }
+  .hospisoftBtnWhite:hover,
+  .hospisoftBtnWhite:focus{
+    background-color: var(--hospisoftBlue);
+  }
+  .hospisoftBtnWhite:hover #rewardconClose,
+  .hospisoftBtnWhite:focus #hospisoftIconClose{
+    color: var(--hospisoftWhite);
+  }
+  .hospisoftBtnWhite svg,
+  .hospisoftBtnWhite svg{
+    fill: var(--hospisoftBlue);
+  }
+  .hospisoftBtnWhite:hover svg,
+  .hospisoftBtnWhite:focus svg{
+    fill: var(--hospisoftWhite);
+  }
+  .hospisoftBtnClose{
+    position: absolute;
+    right: 0;
+    top: -24px;
+    z-index: 9;
+  }
+  #hospisoftDemarrer #hospisoftBtnClose #hospisoftIconClose{
+    height: 16px;
+    fill: var(--hospisoftShadowBlue);
+  }
+
+  /*hospisoftDashBoardSideLinks*/
+  #hospisoftDashBoardSideLinks{
+    overflow: scroll;
+    padding-top: 96px;
+  }
+  #hospisoftDashBoardSideLinks ul li a,
+  #hospisoftDashBoardSideLinks ul li a:visited {
+    padding: 16px;
+    width: 100%;
+    border-radius: 24px;
+    text-decoration: none;
+    transition: var(--transition);
+  }
+  #hospisoftDashBoardSideLinks ul li a:hover,
+  #hospisoftDashBoardSideLinks ul li a:focus {
+    color: var(--hospisoftPureWhite);
+    background-color: var(--hospisoftBlue);
+  }
+  #hospisoftDashBoardSideLinks ul li a:hover > svg,
+  #hospisoftDashBoardSideLinks ul li a:focus > svg {
+    fill: var(--hospisoftPureWhite);
+  }
+
+  #hospisoftDashBoardSideLinks a.hospisoftFlex{
+    gap: 16px;
+  }
+
+
+  .hospisoftCollapsed #hospisoftDashBoardSideLinks ul li a p,
+  .hospisoftCollapsed #hospisoftLogo .hospisoftLogoText{
+    display: none;
+  }
+  .hospisoftCollapsed .hospisoftRoundedPureWhite{
+    transform: rotate(180deg);
+  }
+
+  .hospisoftDashboardPages .hospisoftFixed #hospisoftHeaderLeft{
+    margin-left: 200px;
+  }
+  .hospisoftCollapsedWrapper .hospisoftFixed #hospisoftHeaderLeft{
+    margin-left: 96px;
+  }
+  /*hospisoftDashBoardSideLinks*/
+
+  /*hospisoftDashBoardSideHeader*/
+
+  
+  /*hospisoftDashBoardSideHeader*/
+
+  /*hospisoftDashboardMain*/
+  #hospisoftDashboardMain{
+    width:100%;
+  }
+  /*hospisoftDashboardMain*/
+
+  /*hospisoftDashboardMain*/
+  #hospisoftDashboardMain #hospisoftHeader{
+    background-color: var(--hospisoftPureWhite);
+  }
+  .hospisoftDashboardPages #hospisoftHeader.hospisoftFixed {
+    position: relative;
+  }
+  /*hospisoftDashboardMain*/
+
+  /*hospisoftNotificationsCount*/
+  .hospisoftNotificationsBtn{
+    position: relative;
+    cursor: pointer;
+    position: relative;
+  }
+  #hospisoftHeader .hospisoftContainer #hospisoftHeaderRight
+  .hospisoftNotificationsBtn:hover,
+  #hospisoftHeader .hospisoftContainer #hospisoftHeaderRight
+  .hospisoftNotificationsBtn:focus{
+    border-radius: 24px 24px 0 0;
+  }
+
+  #hospisoftNotificationsCount{
+    font-size: 8px;
+    padding: 8px;
+    position: absolute;
+    top:-10px;
+    right:-10px;
+    border-radius:13px;
+    background: var(--hospisoftGold);
+    background: linear-gradient(135deg, rgba(251,206,117,1) 0%, rgba(204,154,3,1) 100%);    
+    color: var(--hospisoftBlue);
+    border: 2px solid var(--hospisoftPureWhite);
+  }
+
+  .hospisoftHeadersubMenu{
+    position: absolute;
+    padding: 8px 8px;
+    border-radius: 32px 0 32px 32px;
+    background-color: var(--hospisoftShadowBlue);
+    z-index: -1;
+    top: 128px;
+    opacity:0;
+    visibility: hidden;
+    right:0;
+  }
+
+  .hospisoftNotificationsBtn:hover .hospisoftHeadersubMenu,
+  .hospisoftNotificationsBtn:focus .hospisoftHeadersubMenu{
+    top: 48px; 
+    opacity: 1;
+    visibility: visible;
+    z-index: 9999;
+  }
+
+  .hospisoftHeadersubMenu a,
+  .hospisoftHeadersubMenu a:visited{
+    padding: 16px 32px;
+    color: var(--hospisoftBlue);
+    text-decoration: none;
+    width:100%;
+  }
+  .hospisoftHeadersubMenu a:hover,
+  .hospisoftHeadersubMenu a:focus{
+    background-color: var(--hospisoftPureWhite);
+    border-radius: 24px;
+  }
+
+  #hospisoftIconAccount{
+    fill: var(--hospisoftBlue);
+  }
+  #hospisoftIconLogOut{
+    stroke: var(--hospisoftBlue);
+    fill: none;
+  }
+  .hospisoftNotificationLinks li{
+    padding: 16px 32px;
+    width: 256px;
+  }
+  .hospisoftNotificationLinks li:nth-child(even){
+    background-color: var(--hospisoftWhite);
+    border-radius: 24px;
+  }
+  .hospisoftHeadersubMenu .hospisoftBtnBlue{
+    width: 100%;
+    display: block;
+    color: var(--hospisoftWhite);
+    text-align: center;
+  }
+  /*hospisoftNotificationsCount*/
+
+  /*hospisoftDemarrer*/
+
+  #hospisoftDemarrer{
+    position: relative;
+  }
+  #hospisoftDemarrer .hospisoftDemarrage{
+    position: relative;
+    z-index: 9;
+  }
+
+  #hospisoftDemarrer .hospisoftFreeFormDiv{
+    background-color: var(--hospisoftPureWhite);
+    height: 32px;
+    width: 32%;
+    left: 0;
+    top: -32px;
+    z-index: 9;
+    border-radius: 64px 64px 0 0;
+    }
+    #hospisoftDemarrer .hospisoftFreeFormDiv2{
+        background-color: var(--hospisoftWhite);
+        height: 32px;
+        width: 68%;
+        right: 0;
+        top:0;
+        z-index: 5;
+        border-radius: 0 0 0 64px;
+    }
+    #hospisoftDemarrer .hospisoftFreeFormDiv3{
+        background-color: var(--hospisoftWhite);
+        height: 32px;
+        width: 32px;
+        right: 0;
+        top: 32px;
+        z-index: 7;
+        border-radius: 0 0 0 0;
+    }
+    #hospisoftDemarrer .hospisoftFreeFormDiv4{
+        background-color: var(--hospisoftPureWhite);
+        height: 32px;
+        width: 36%;
+        right: 0;
+        top: 32px;
+        z-index: 8;
+        border-radius: 0 64px 0 0;
+    }
+  #hospisoftDemarrer h2{
+    padding: 64px;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 9;
+    margin: 0;
+    line-height: 1;
+  }
+  #hospisoftDemarrer .hospisoftIcon{
+    width:100%;
+    height: auto;
+  }
+  #hospisoftDemarrer .hospisoftFlex{
+    gap: 16px;
+  }
+  .hospisoftDemarrageFig{
+    background-color: var(--hospisoftWhite);
+    padding: 64px;
+    border-radius: 64px 64px 0 0;
+  }
+  .hospisoftBtnWrapper{
+    background-color: var(--hospisoftBlue);
+    padding: 32px;
+    border-radius: 0 0 48px 48px;
+  }
+  .hospisoftBtnWrapper a{
+    text-align: center;
+    padding: 16px;
+    border-radius: 24px;
+    width: 100%;
+    display: block;
+    background-color: var(--hospisoftLightBlue);
+    color: var(--hospisoftWhite);
+  }
+
+  /*hospisoftDemarrer*/
+
+  /*hospisoftShortcutProgrammes*/
+
+  .hospisoftShortcutsBloc{
+    background-color: var(--hospisoftPureWhite);
+    padding: 64px 8px 8px 8px;
+    border-radius: 0 32px 32px 32px;
+    position: relative;
+    flex: 0 1 32%;
+  }
+
+  .hospisoftShortcutsBloc .hospisoftFreeFormDiv{
+    background-color: var(--hospisoftPureWhite);
+    height: 32px;
+    width: 80%;
+    left: 0;
+    top: -32px;
+    z-index: 9;
+    border-radius: 64px 64px 0 0;
+    }
+    .hospisoftShortcutsBloc .hospisoftFreeFormDiv2{
+        background-color: var(--hospisoftWhite);
+        height: 32px;
+        width: 20%;
+        right: 0;
+        top:0;
+        z-index: 5;
+        border-radius: 0 0 0 64px;
+    }
+    .hospisoftShortcutsBloc .hospisoftFreeFormDiv3{
+        background-color: var(--hospisoftWhite);
+        height: 32px;
+        width: 32px;
+        right: 0;
+        top: 32px;
+        z-index: 7;
+        border-radius: 0 0 0 0;
+    }
+    .hospisoftShortcutsBloc .hospisoftFreeFormDiv4{
+        background-color: var(--hospisoftPureWhite);
+        height: 32px;
+        width: 32px;
+        right: 0;
+        top: 32px;
+        z-index: 8;
+        border-radius: 0 64px 0 0;
+    }
+  .hospisoftShortcutsBloc h2{
+    padding: 0 32px;
+    position: absolute;
+    top:0;
+    left:0;
+    font-size: 21px;
+    letter-spacing: -1px;
+    z-index: 9;
+    margin: 0;
+    line-height: 1;
+  }
+
+  .hospisoftDashBoardHomeTable{
+    padding: 16px;
+    border-radius: 32px;
+    width:100%;
+  }
+  tr{
+    padding: 8px 16px;
+    border-radius: 16px;
+    display: flex;
+    gap:16px;
+    justify-content: space-between;
+  }
+  th, td{
+    text-align: left;
+  }
+  .hospisoftTableDark{
+    background-color: var(--hospisoftBlue);
+    color: var(--hospisoftWhite);
+  }
+  .hospisoftTableLight{
+    background-color: var(--hospisoftPureWhite);
+    color: var(--hospisoftBlue);
+  }
+  #hospisoftShortcutsOthers .hospisoftTableLight{
+    padding-top: 0;
+  }
+
+  #hospisoftShortcuts .hospisoftShortcutsBloc{
+    margin-bottom: 32px;
+  }
+  #hospisoftShortcuts > .hospisoftFlex{
+    gap: 16px;
+    align-items: baseline;
+  }
+
+  .hospisoftTableDark tr:nth-child(even){
+    background-color: var(--hospisoftDarkerBlue);
+  }
+  .hospisoftTableLight tr:nth-child(even){
+    background-color: var(--hospisoftWhite);
+  }
+
+  .hospisoftGrid{
+    flex: 0 1 64%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  .hospisoftVoirTout{
+    padding: 8px 16px;
+    display: block;
+    position: absolute;
+    top: 21px;
+    right: 0;
+    background-color: var(--hospisoftBlue);
+    color: var(--hospisoftWhite);
+    z-index: 9;
+    border-radius: 18px;
+  }
+  .hospisoftVoirTout:hover,
+  .hospisoftVoirTout:focus{
+    color: var(--hospisoftShadowBlue);
+  }
+  /*hospisoftShortcutProgrammes*/
+  /* DASHBOARD */
+
+/* END MAIN SECTION */
+
+
+/* START FOOTER */
+
+#hospisoftFooter{
+    background-color: var(--hospisoftDarkerBlue);
+    color: var(--hospisoftWhite);
+    position: relative;
+}
+.hospisoftDashboardPages #hospisoftFooter{
+    padding: 16px 0;
+    background-color: var(--hospisoftWhite);
+    color: var(--hospisoftDarkerBlue);
+}
+#hospisoftFooterTop .hospisoftFreeFormDiv{
+    background-color: var(--hospisoftDarkBlue);
+    height: 8%;
+    width: calc(50% - 44px);
+    left: 0;
+    top: 0;
+    z-index: 8;
+    border-radius: 0 0 64px 0;
+}
+#hospisoftFooterTop .hospisoftFreeFormDiv2{
+    background-color: var(--hospisoftDarkBlue);
+    height: 8%;
+    width: calc(50% - 44px);
+    right: 0;
+    top: 0;
+    z-index: 8;
+    border-radius: 0 0 0 64px;
+}
+
+.hospisoftLightBottom #hospisoftFooterTop .hospisoftFreeFormDiv,
+.hospisoftLightBottom #hospisoftFooterTop .hospisoftFreeFormDiv2{
+    background-color: var(--hospisoftWhite);
+}
+
+#hospisoftFooter a,
+#hospisoftFooter a:visited{
+    color: var(--hospisoftWhite);
+}
+#hospisoftFooter a:hover,
+#hospisoftFooter a:focus{
+    color: var(--hospisoftShadowBlue);
+}
+#hospisoftFooterTop{
+    background-color: var(--hospisoftDarkerBlue);
+    padding: 8rem 0 4rem;
+    position: relative;
+}
+#hospisoftFooterBottom{
+    border-top: 1px solid var(--hospisoftWhite);
+    padding: 2rem 0;
+    background-color: var(--hospisoftDarkerBlue);
+}
+
+#hospisoftFooterBottom > .hospisoftContainer > .hospisoftFlex{
+    justify-content: space-between;
+}
+#hospisoftFooterBottom > .hospisoftContainer > .hospisoftFlex p{
+    width:fit-content;
+}
+#hospisoftFooterTop .hospisoftContainer > .hospisoftFlex {
+    justify-content: space-between;
+}
+#hospisoftFooterTop .hospisoftContainer > .hospisoftFlex > #hospisoftColophon01{
+    flex: 0 1 40%;
+}
+#hospisoftFooterTop .hospisoftContainer > .hospisoftFlex > .hospisoftFlex{
+    flex: 0 1 50%;
+    gap: 5%;
+}
+
+.hospisoftColophon h3{
+    margin-bottom: 1rem;
+}
+/* hospisoftColophon01 */
+
+#hospisoftColophon01 .hospisoftFlex{
+    flex-direction: column;
+    gap: 10px;
+}
+#hospisoftFooterMenuSocials{
+    flex-direction:row !important;
+    margin-top: 1rem;
+}
+#hospisoftColophon01 a{
+    text-decoration: underline;
+}
+#hospisoftColophon01 #hospisoftIconLogoFooter{
+    height: 32px;
+}
+#hospisoftColophon01 a{
+    font-size: 1.35rem;
+    font-weight: bold;
+}
+/* hospisoftColophon02 */
+#hospisoftColophon02 .hospisoftFlex{
+    gap: 8px;
+}
+.hospisoftFooterLinks{
+    margin-bottom: 1rem;
+}
+#hospisoftColophon02 ul li a{
+    padding: .65rem 0;
+    display: table-cell;
+}
+
+#hospisoftFooterMenuSocials{
+    gap:4px;
+}
+#hospisoftFooterMenuSocials svg{
+    height: 48px;
+}
+#hospisoftFooterMenuSocials a svg{
+    fill: var(--hospisoftWhite);
+}
+#hospisoftFooterMenuSocials a:hover svg,
+#hospisoftFooterMenuSocials a:focus svg{
+    fill: var(--hospisoftLightBlue);
+}
+#hospisoftFooterSocials h3{
+    margin-top: 1rem;
+}
+#hospisoftFooter #hospisoftToTopBtn{
+    display: block;
+    position: absolute;
+    left:50%;
+    top:-32px;
+    border-radius: 32px;
+    padding: 32px 32px 32px 32px;
+    transform: translateX(-50%);
+    background-color: var(--hospisoftDarkerBlue);
+    z-index: 9;
+    line-height: 0;
+}
+#hospisoftFooter #hospisoftToTopBtn svg{
+    height: 25px;
+}
+
+.hospisoftDashboardPages #hospisoftFooter{
+    background-color: transparent;
+    color: var(--hospisoftBlue);
+    padding: 64px 0 32px;
+}
+.hospisoftDashboardPages #hospisoftFooter .hospisoftFlex{
+    justify-content: space-between;
+}
+.hospisoftDashboardPages #hospisoftFooter .hospisoftFlex p{
+    width:max-content;
+}
+/* END FOOTER */
+
+
+.hospisoftLightBottom #hospisoftMain{
+    padding: 32px 0 128px;
+}
+figcaption a h3,
+figcaption a h2{
+   color: var(--hospisoftBlue);
+}
+
+.hospisoftIconDivider{
+    position: absolute;
+    z-index: 2;
+}
+#hospisoftIconDividerBottom{
+    bottom: -2px;
+}
+#hospisoftIconDividerTop{
+    top: 2px;
+}
+.hospisoftDisplayNone{
+    display: none;
+}
+
+.hospisoftOnSight{
+    bottom: 1rem !important;
+    visibility: visible !important;
+}
+.hospisoftBold{
+    font-weight: bold;
+}
+#hospisoftBacktToTop{
+    width:0;
+    height:0;
+}
+
+.hospisoftDesktop{
+    display: block !important;
+}
+.hospisoftMobile{
+    display:none !important;
+}
+
+.hospisoftDivider{
+    width: 100%;
+    height: 1px;
+    background-color: var(--hospisoftShadowBlue);
+    margin: 2rem 0;
+    position: relative;
+}
+.hospisoftDivider p{
+    position: absolute;
+    z-index: 9;
+    background-color: var(--hospisoftPureWhite);
+    color: var(--hospisoftBoxShadow);
+    padding: 8px;
+    top:50%;
+    width: fit-content;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+fieldset{
+    border: 0;
+}
+
+.admin-bar .hospisoftFixed{
+    margin-top: 32px;
+}
+
+.hospisoftTextHighlighted{
+    color: var(--hospisoftGold);
+}
+
+#hospisoftHeroSection .hospisoftHeroInnerText .hospisoftFreeFormDiv,
+#hospisoftHeroSection .hospisoftHeroInnerText .hospisoftFreeFormDiv2,
+#hospisoftHeroSection .hospisoftHeroInnerText .hospisoftFreeFormDiv3,
+#hospisoftHeroSection .hospisoftHeroInnerText .hospisoftFreeFormDiv4,
+#hospisoftForm .hospisoftFreeFormDiv,#hospisoftForm .hospisoftFreeFormDiv2,
+#hospisoftForm .hospisoftFreeFormDiv3, #hospisoftForm .hospisoftFreeFormDiv4{
+    display: none;
+}
+
+
+#hospisoftPagination{
+    margin-top: 48px;
+}
+#hospisoftPagination .hospisoftFlex{
+    justify-content: center;
+}
+@media screen and (max-width:900px){
+
+    .hospisoftContainer {
+        width: 96%;
+    }
+
+    #hospisoft404 h2{
+        width: 88%;  
+    }
+    #hospisoftIcon404{
+        width: 64%;
+    }
+    #hospisoftTechnologie .hospisoftFlex > .hospisoftHeroInnerText, .hospisoftFlex #hospisoftIconTechWrapper {
+        flex: 0 1 100%;
+        width: 100%;
+    }    
+    #hospisoftIconTech{
+        width: 100%;
+    }
+    #hospisoftTechnologie .hospisoft1920{
+        display: none;
+    }
+    #hospisoftTechnologie .hospisoft1366{
+        display: block;
+    }
+    #hospisoftIconLock{
+        height: 25px;
+        fill: var(--hospisoftWhite);
+    }
+    .hospisoftFlex > .hospisoftHeroInnerText, .hospisoftFlex > figure {
+       width: 100%;
+    }
+    #hospisoftLogo{
+        width:50px;
+    }
+
+    .hospisoftLinkGold{
+        max-width: 90%;
+    }
+    #hospisoftFooterTop .hospisoftContainer > .hospisoftFlex,
+    #hospisoftFooterTop .hospisoftContainer > .hospisoftFlex > .hospisoftFlex{
+        flex-direction: column;
+    }
+    .hospisoftMobile{
+        display:block !important;
+    }
+    .hospisoftDesktop{
+        display: none !important;
+    }
+
+    #hospisoftMenuOpened{
+        width:100%;
+    }
+
+    #hospisoftFonctionnalites .hospisoftGrid {
+        grid-template-columns: repeat(auto-fill, minmax(100%,1fr));
+        grid-template-rows: repeat(3, 1fr) 2fr;
+    }
+
+    #hospisoftIconAQuiNousAdressonsNousArrow{
+        display: none;
+    }
+
+    .hospisoftBloc .hospisoftContainer > .hospisoftFlex {
+        flex-direction:column-reverse;
+        gap: 32px;
+    }
+    #hospisoftHeroText #hospisoftIconGifts {
+        height: auto;
+        position: relative;
+    }
+    #hospisoftHeroSection .hospisoftHeroInnerText .hospisoftFreeFormDiv,
+    #hospisoftHeroSection .hospisoftHeroInnerText .hospisoftFreeFormDiv2,
+    #hospisoftHeroSection .hospisoftHeroInnerText .hospisoftFreeFormDiv3,
+    #hospisoftHeroSection .hospisoftHeroInnerText .hospisoftFreeFormDiv4,
+    #hospisoftForm .hospisoftFreeFormDiv,#hospisoftForm .hospisoftFreeFormDiv2,
+    #hospisoftForm .hospisoftFreeFormDiv3, #hospisoftForm .hospisoftFreeFormDiv4{
+        display: none;
+    }
+    .hospisoftAuthentification #hospisoftHeroSection #hospisoftHeroText .hospisoftContainer .hospisoftFormFlex{
+        flex-direction: column;
+    }
+    #hospisoftForm {
+        padding: 32px 32px 32px 32px;
+        border-radius: 48px 48px 48px 48px;
+        margin-bottom: 32px;
+    }
+    .hospisoftSocialAuth{
+        justify-content: center;
+    }
+    .hospisoftHeroInnerText {
+        border-radius: 48px 48px 48px 48px;
+        padding: 32px 32px 32px 32px;
+    }
+    .hospisoftHeroInnerText > p {
+        max-width: 100%;
+    }
+    .hospisoftHeroInnerText > .hospisoftFlex {
+        flex-direction: column;
+    }
+    .hospisoftHeroInnerText > .hospisoftFlex a.hospisoftBtn {
+        width: 100%;
+    }
+    #hospisoftLogo svg {
+        height: 56px;
+    }
+    #hospisoftTechnologie .hospisoftFreeFormDiv,
+    #hospisoftTechnologie .hospisoftFreeFormDiv2,
+    #hospisoftTechnologie .hospisoftFreeFormDiv3{
+        display: none;
+    }
+    #hospisoftTechnologie .hospisoftHeroInnerText {
+        border-radius: 64px 64px 64px 64px;
+        padding: 32px 32px 32px 32px;
+    }
+    #hospisoftIconTechWrapper {
+        border-radius: 64px 64px 64px 64px;
+        padding: 32px 32px 32px 32px;
+        background-color: var(--hospisoftPureWhite);
+    }
+    #hospisoftPrices .hospisoftContainer .hospisoftFlex {
+        flex-direction:column;
+        gap: 16px;
+    }
+    #hospisoftPrices .hospisoftContainer .hospisoftFlex .hospisoftPrices a.hospisoftBtn {
+        flex-direction: row;
+        width:100%;
+    }
+    #hospisoftPrices .hospisoftContainer > .hospisoftHeading {
+        flex-direction: column;
+        gap: 16px;
+    }
+    #hospisoftPrices .hospisoftContainer > .hospisoftHeading p{
+        width:100%;
+    }
+    .hospisoftPrices .hospisoftFreeFormDiv,
+    .hospisoftPrices .hospisoftFreeFormDiv2,
+    .hospisoftPrices .hospisoftFreeFormDiv3,
+    .hospisoftPrices .hospisoftFreeFormDiv4{
+        display: none;
+    }
+    .hospisoftPrices {
+        border-radius: 48px 48px 48px 48px;
+        padding: 48px 48px 48px 48px;
+    }
+    #hospisoftHeader .hospisoftContainer #hospisoftHeaderNavLinks ul {
+        gap: 16px;
+    }
+    .hospisoftBtn {
+        padding: 1.32rem 1rem;
+        line-height: 1;
+    }
+    #hospisoftAlternative #hospisoftHeroText #hospisoftAlternativeIconWrapper, #hospisoftAlternative .hospisoftFlex > .hospisoftHeroInnerText {
+        flex: 0 1 100%;
+        width: 100%;
+    }
+    #hospisoftAlternativeIcon {
+        height: 100%;
+    }
+    #hospisoftAlternativeIconWrapper {
+        position: relative;
+        border-radius: 48px 48px 48px 48px;
+        padding: 32px 32px 32px 32px;
+        background-color: var(--hospisoftPureWhite);
+    }
+    #hospisoftAlternative > #hospisoftHeroText > .hospisoftContainer > .hospisoftFlex > .hospisoftHeroInnerText {
+        border-radius: 48px 48px 48px 48px;
+        padding: 32px 32px 32px 32px;
+    }
+    #hospisoftAlternative .hospisoftFreeFormDiv,
+    #hospisoftAlternative .hospisoftFreeFormDiv2,
+    #hospisoftAlternative .hospisoftFreeFormDiv3,
+    #hospisoftAlternative .hospisoftFreeFormDiv4{
+        display:none;
+    }
+    #hospisoftCaretDown {
+        right: 0;
+    }
+    .hospisoftAccordionWrapper .hospisoftAccordionTitle h3 {
+        width:92%;
+    }
+    h2 {
+        width: 100%;
+    }
+}
+.hospisoftTextLeft{
+    text-align: left;
+}
+.hospisoftTextRight{
+    text-align: right;
+}
+
+table{
+    width:100%;    
+    text-align: left;
+    text-align-last: left;
+    background-color: var(--hospisoftPureWhite);
+    border-radius: 24px;
+}
+table td{
+    padding: 16px;
+}
+table tr{
+    background-color: var(--hospisoftWhite);
+    margin: 8px;
+}
+table .hosTd24{
+    width: 24%;
+}
+table .hosTd16{
+    width: 16%;
+}
+table .hospisoftHead{
+    background-color: var(--hospisoftBlue);
+    color: var(--hospisoftWhite);
+    font-weight: bold;
+}
+
+#hospisoftFiltres{
+    margin-bottom: 32px;
+}
+#hospisoftFiltres > .hospisoftFlex{
+    justify-content: space-between;
+}
+#hospisoftFiltres > .hospisoftFlex > .hospisoftFlex{
+    align-items: center;
+}
+
+select, select:hover, select:focus{
+    padding: 1rem 0 !important;
+    border-left: 16px solid var(--hospisoftPureWhite);
+    border-right: 16px solid var(--hospisoftPureWhite);
+}
+
+@media screen and (max-width: 1200px) and (min-width: 900px) {
+    #hospisoftHeroText #hospisoftIconGifts {
+        height: 88%;
+    }
+    .hospisoftHeroInnerText > .hospisoftFlex {
+        gap: 16px;
+        flex-direction: column;
+        align-items:normal;
+    }
+    #hospisoftHeroSection .hospisoftHeroInnerText a.hospisoftBtn {
+        width:80%;
+    }
+    #hospisoftTechnologie .hospisoftFreeFormDiv,
+    #hospisoftTechnologie .hospisoftFreeFormDiv2,
+    #hospisoftTechnologie .hospisoftFreeFormDiv3 {
+        display:none;
+    }
+    #hospisoftTechnologie .hospisoftHeroInnerText {
+        border-radius: 0 64px 64px 0;
+        padding: 32px 32px 32px 32px;
+    }
+    #hospisoftIconTechWrapper {
+        border-radius: 64px 24px 0 64px;
+    }
+    .hospisoftPrices .hospisoftFreeFormDiv {
+        width: 80%;
+    }
+    .hospisoftPrices .hospisoftFreeFormDiv2 {
+        width: 20%;
+    }
+    .hospisoftPrices .hospisoftFreeFormDiv4 {
+        width: 20%;
+    }
+    #hospisoftAlternative .hospisoftFreeFormDiv,
+    #hospisoftAlternative .hospisoftFreeFormDiv2,
+    #hospisoftAlternative .hospisoftFreeFormDiv3 {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width:1600px){
+
+    #hospisoftTechnologie .hospisoft1366{
+        display: none;
+    }
+    #hospisoftTechnologie .hospisoft1920{
+        display: block;
+    }
+    .hospisoftContainer{
+        width: 80%;
+    }
+    #hospisoftMenuOpened ul li a {
+        padding: 1rem 4vw 1rem 12.5vw;
+    }
+    #hospisoftMenuSocials {
+        padding: 2rem 4vw 2rem 12.5vw;
+    }
+}
+
+@media screen and (min-width:1920px){
+
+    .hospisoftContainer{
+        width: 64%;
+    }
+    #hospisoftMenuOpened ul li a {
+        padding: 1rem 4vw 1rem 12.5vw;
+    }
+    #hospisoftMenuSocials {
+        padding: 2rem 4vw 2rem 12.5vw;
+    }
+}
+@media screen and (min-width:2560px){
+
+    .hospisoftContainer{
+        width: 48%;
+    }
+    #hospisoftMenuOpened ul li a {
+        padding: 1rem 4vw 1rem 20vw;
+    }
+}
