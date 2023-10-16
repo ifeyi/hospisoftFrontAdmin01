@@ -64,12 +64,6 @@ hospisoftLoadingDiv
     transform: translate(-50%, -50%);
     height: 150px;
 }
-#hospisoftIconLogoLoading .st0,
-#hospisoftIconLogoLoading .st1,
-#hospisoftIconLogoLoading .st2,
-#hospisoftIconMobileLogo .st0, 
-#hospisoftIconMobileLogo .st1,
-#hospisoftIconMobileLogo .st2{fill:var(--hospisoftBlue);}
  
 /*
 
@@ -1165,6 +1159,8 @@ sup{
     border-right: 2px solid var(--hospisoftWhite);
   }
 
+
+
   .hospisoftRoundedPureWhite{
     background-color: var(--hospisoftPureWhite);
     border: 2px solid var(--hospisoftWhite);
@@ -1189,11 +1185,7 @@ sup{
     border: 2px solid var(--hospisoftShadowBlue);
   }
 
-  #hospisoftDashBoardSide #hospisoftLogo #hospisoftIconLogo,
-  #hospisoftDashBoardSide #hospisoftLogo #hospisoftIconLogoMobile{
-    height: 32px;
-    transition: var(--transition);
-  }
+
   #hospisoftDashBoardSide .hospisoftIcon{
     height: 16px;
   }
@@ -1272,6 +1264,25 @@ sup{
   .hospisoftCollapsed .hospisoftRoundedPureWhite{
     transform: rotate(180deg);
   }
+
+.hospisoftDesktop, .hospisoftMobile{
+    height: 32px;
+    width: auto;
+}
+
+.hospisoftDesktop{
+    display: block;
+}
+.hospisoftMobile{
+    display: none;
+}
+
+.hospisoftCollapsed .hospisoftDesktop{
+    display: none;
+}
+.hospisoftCollapsed .hospisoftMobile{
+    display: block;
+}
 
   .hospisoftDashboardPages .hospisoftFixed #hospisoftHeaderLeft{
     margin-left: 200px;
@@ -1782,13 +1793,6 @@ figcaption a h2{
     height:0;
 }
 
-.hospisoftDesktop{
-    display: block !important;
-}
-.hospisoftMobile{
-    display:none !important;
-}
-
 .hospisoftDivider{
     width: 100%;
     height: 1px;
@@ -1836,7 +1840,74 @@ fieldset{
 #hospisoftPagination .hospisoftFlex{
     justify-content: center;
 }
-@media screen and (max-width:900px){
+
+.hospisoftTextLeft{
+    text-align: left;
+}
+.hospisoftTextRight{
+    text-align: right;
+}
+
+table{
+    width:100%;    
+    text-align: left;
+    text-align-last: left;
+    background-color: var(--hospisoftPureWhite);
+    border-radius: 24px;
+}
+table td{
+    padding: 16px;
+}
+table tr{
+    background-color: var(--hospisoftWhite);
+    margin: 8px;
+}
+table .hosTd24{
+    width: 24%;
+}
+table .hosTd16{
+    width: 16%;
+}
+table .hospisoftHead{
+    background-color: var(--hospisoftBlue);
+    color: var(--hospisoftWhite);
+    font-weight: bold;
+}
+
+#hospisoftFiltres{
+    margin-bottom: 32px;
+}
+#hospisoftFiltres > .hospisoftFlex{
+    justify-content: space-between;
+}
+#hospisoftFiltres > .hospisoftFlex > .hospisoftFlex{
+    align-items: center;
+}
+
+select, select:hover, select:focus{
+    padding: 1rem 0 !important;
+    border-left: 16px solid var(--hospisoftPureWhite);
+    border-right: 16px solid var(--hospisoftPureWhite);
+}
+
+.hospisoftEncours,.hospisoftDisponible{
+    padding: 8px;
+    border-radius: 16px;
+    font-size: 8px;
+}
+.hospisoftEncours{
+    background-color: var(--hospisoftYellow);
+}
+.hospisoftDisponible{
+    background-color: var(--hospisoftBlue);
+    color: var(--hospisoftPureWhite);
+}
+
+@media screen and (max-width: 800px) and (min-width: 300px){
+
+    #hospisoftDashBoardSideHeader{
+        padding: 32px 8px;
+    }
 
     .hospisoftContainer {
         width: 96%;
@@ -1880,10 +1951,10 @@ fieldset{
         flex-direction: column;
     }
     .hospisoftMobile{
-        display:block !important;
+        display:block;
     }
     .hospisoftDesktop{
-        display: none !important;
+        display: none;
     }
 
     #hospisoftMenuOpened{
@@ -2020,63 +2091,6 @@ fieldset{
     h2 {
         width: 100%;
     }
-}
-.hospisoftTextLeft{
-    text-align: left;
-}
-.hospisoftTextRight{
-    text-align: right;
-}
-
-table{
-    width:100%;    
-    text-align: left;
-    text-align-last: left;
-    background-color: var(--hospisoftPureWhite);
-    border-radius: 24px;
-}
-table td{
-    padding: 16px;
-}
-table tr{
-    background-color: var(--hospisoftWhite);
-    margin: 8px;
-}
-table .hosTd24{
-    width: 24%;
-}
-table .hosTd16{
-    width: 16%;
-}
-table .hospisoftHead{
-    background-color: var(--hospisoftBlue);
-    color: var(--hospisoftWhite);
-    font-weight: bold;
-}
-
-#hospisoftFiltres{
-    margin-bottom: 32px;
-}
-#hospisoftFiltres > .hospisoftFlex{
-    justify-content: space-between;
-}
-#hospisoftFiltres > .hospisoftFlex > .hospisoftFlex{
-    align-items: center;
-}
-
-select, select:hover, select:focus{
-    padding: 1rem 0 !important;
-    border-left: 16px solid var(--hospisoftPureWhite);
-    border-right: 16px solid var(--hospisoftPureWhite);
-}
-.hospisoftDesktop{
-    display: block;
-}
-.hospisoftMobile{
-    display: none;
-}
-
-@media screen and (max-width: 800px) and (min-width: 300px) {
     #hospisoftDashBoardSide p{
         display: none;
     }
@@ -2092,6 +2106,7 @@ select, select:hover, select:focus{
     }
     #hospisoftDashBoardCollapse{display: none;}
 }
+
 @media screen and (max-width: 1200px) and (min-width: 900px) {
     #hospisoftHeroText #hospisoftIconGifts {
         height: 88%;
