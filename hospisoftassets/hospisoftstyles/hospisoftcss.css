@@ -345,15 +345,7 @@ a.hospisoftFlex{
     background-color: var(--hospisoftPureWhite);
     z-index: 999;
 }
-#hospisoftDashBoardSideHeader {
-    overflow-y: scroll;
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none;  /* Internet Explorer 10+ */
-}
-#hospisoftDashBoardSideHeader::-webkit-scrollbar { /* WebKit */
-    width: 0;
-    height: 0;
-}
+
 #hospisoftLogo{
     position: relative;
     z-index: 99999;
@@ -1165,12 +1157,14 @@ sup{
   /* DASHBOARD */
   
   #hospisoftDashBoardSide{
+    overflow: auto;
     position: relative;
     background-color: var(--hospisoftPureWhite);
     padding: 16px 32px 32px 32px;
     height: auto;
     border-right: 2px solid var(--hospisoftWhite);
   }
+
   .hospisoftRoundedPureWhite{
     background-color: var(--hospisoftPureWhite);
     border: 2px solid var(--hospisoftWhite);
@@ -1195,7 +1189,8 @@ sup{
     border: 2px solid var(--hospisoftShadowBlue);
   }
 
-  #hospisoftDashBoardSide #hospisoftLogo #hospisoftIconLogo{
+  #hospisoftDashBoardSide #hospisoftLogo #hospisoftIconLogo,
+  #hospisoftDashBoardSide #hospisoftLogo #hospisoftIconLogoMobile{
     height: 32px;
     transition: var(--transition);
   }
