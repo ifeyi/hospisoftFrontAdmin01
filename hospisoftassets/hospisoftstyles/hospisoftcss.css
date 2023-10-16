@@ -152,7 +152,6 @@ a.hospisoftBtnGray, a.hospisoftBtnGray:visited{
 
 .hospisoftBtn{
     padding: 16px;
-    border-radius: 24px;
     cursor: pointer;
     color: var(--hospisoftBlue);
     transition: var(--hospisoftTransition);
@@ -234,7 +233,6 @@ blockquote{
     background-color: var(--hospisoftBlue);
     color: var(--hospisoftWhite);
     font-size: 1.5rem;
-    border-radius: 50px;
     font-weight: bold;
 }
 blockquote::before{
@@ -287,7 +285,6 @@ a.hospisoftFlex{
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: var(--hospisoftWhite);
-    border-radius: 4rem;
     max-width: 300px;
     box-shadow: 0 0 100px 0 rgba(0, 0, 0, .1);
     z-index: 9;
@@ -524,7 +521,6 @@ header #hospisoftY, header #hospisoftZ{
 }
 .hospisoftHeroInnerText{
     position: relative;
-    border-radius: 48px 0 48px 48px;
     background-color: var(--hospisoftPureWhite);
     flex-direction: column;
     gap: 16px;
@@ -548,7 +544,6 @@ header #hospisoftY, header #hospisoftZ{
     bottom:0;
     right:0;
     z-index: 6;
-    border-radius: 64px 0 0 0;
 }
 #hospisoftHeroSection .hospisoftHeroInnerText .hospisoftFreeFormDiv2{
     background-color: var(--hospisoftPureWhite);
@@ -557,7 +552,6 @@ header #hospisoftY, header #hospisoftZ{
     top:0;
     left:100%;
     z-index: 7;
-    border-radius: 0 64px 64px 0;
 }
 #hospisoftHeroSection .hospisoftHeroInnerText .hospisoftFreeFormDiv3{
     background-color: var(--hospisoftPureWhite);
@@ -566,7 +560,6 @@ header #hospisoftY, header #hospisoftZ{
     bottom:0;
     right:8%;
     z-index: 9;
-    border-radius: 0 64px 64px 0;
 }
 #hospisoftHeroSection .hospisoftHeroInnerText .hospisoftFreeFormDiv4{
     background-color: var(--hospisoftWhite);
@@ -620,7 +613,6 @@ header #hospisoftY, header #hospisoftZ{
 }
 
 #hospisoftTechnologie .hospisoftHeroInnerText{
-    border-radius: 0 64px 64px 0;
     padding: 112px 32px 32px 32px;
 }
 
@@ -629,7 +621,6 @@ header #hospisoftY, header #hospisoftZ{
     height: auto;
 }
 #hospisoftIconTechWrapper{
-    border-radius: 64px 64px 0 64px;
     padding: 32px 32px 32px 32px;
     background-color: var(--hospisoftPureWhite);
 }
@@ -641,7 +632,6 @@ header #hospisoftY, header #hospisoftZ{
     left: 0;
     top: 0;
     z-index: 6;
-    border-radius: 0 64px 0 64px;
 }
 #hospisoftTechnologie .hospisoftFreeFormDiv2 {
     background-color: var(--hospisoftPureWhite);
@@ -650,7 +640,6 @@ header #hospisoftY, header #hospisoftZ{
     left: 0;
     top:12%;
     z-index: 8;
-    border-radius: 0 64px 0 64px;
 }
 #hospisoftTechnologie .hospisoftFreeFormDiv3 {
     background-color: var(--hospisoftWhite);
@@ -659,7 +648,6 @@ header #hospisoftY, header #hospisoftZ{
     right: 0;
     top: 12%;
     z-index: 7;
-    border-radius: 0 0 0 0;
 }
 
 /*hospisoftPrices*/
@@ -677,7 +665,6 @@ header #hospisoftY, header #hospisoftZ{
     left: 0;
     top: 100%;
     z-index: 6;
-    border-radius: 0 0 64px 64px;
 }
 .hospisoftPrices .hospisoftFreeFormDiv2{
     background-color: var(--hospisoftWhite);
@@ -686,7 +673,6 @@ header #hospisoftY, header #hospisoftZ{
     right: 0;
     bottom: 0;
     z-index: 7;
-    border-radius: 64px 0 0 0;
 }
 .hospisoftPrices .hospisoftFreeFormDiv3{
     background-color: var(--hospisoftWhite);
@@ -695,7 +681,6 @@ header #hospisoftY, header #hospisoftZ{
     right: 0;
     bottom: 12%;
     z-index: 7;
-    border-radius: 0 0 0 0;
 }
 .hospisoftPrices .hospisoftFreeFormDiv4{
     background-color: var(--hospisoftPureWhite);
@@ -704,7 +689,6 @@ header #hospisoftY, header #hospisoftZ{
     right: 0;
     bottom: 12%;
     z-index: 8;
-    border-radius: 0 0 64px 0;
 }
 
 .hospisoftPricePlan{
@@ -774,7 +758,6 @@ sup{
 
 #hospisoftAlternativeIconWrapper{
     position: relative;
-    border-radius: 0 48px 48px 48px;
     padding: 32px 32px 32px 32px;
     background-color: var(--hospisoftPureWhite);
 }
@@ -786,7 +769,6 @@ sup{
     width: 100%;
     height: 8%;
     z-index:6;
-    border-radius: 0 48px 0 0;
 }
 #hospisoftAlternative .hospisoftFreeFormDiv2{
     background-color: var(--hospisoftPureWhite);
@@ -795,7 +777,6 @@ sup{
     width: 100%;
     height: 8%;
     z-index:7;
-    border-radius: 0 0 0 48px;
 }
 #hospisoftAlternative .hospisoftFreeFormDiv3{
     background-color: var(--hospisoftDarkBlue);
@@ -804,7 +785,6 @@ sup{
     width: 8%;
     height: 8%;
     z-index:6;
-    border-radius: 0 0 0 0;
 }
 
 #hospisoftMain .hospisoftBlueDiv{
@@ -819,7 +799,6 @@ sup{
     background-color: var(--hospisoftLightBlue);
     display: block;
     padding: 2px 4px;
-    border-radius: 8px;
     font-size: .64rem;
     right: 48px;
     top: 48px;
@@ -841,7 +820,6 @@ sup{
 #hospisoftAccordion{
     background-color: var(--hospisoftDarkerBlue);
     color: var(--hospisoftWhite);
-    border-radius: 2rem 2rem 2rem 2rem;
   }
 #hospisoftAccordion p{
     color: var(--hospisoftBlack);
@@ -898,7 +876,6 @@ sup{
   }
   .hospisoftAccordionWrapper:last-child .hospisoftAccordionText{
     overflow: hidden;
-    border-radius: 0 0 30px 30px;
   }
 .hospisoftAccordionWrapper .hospisoftAccordionTextClose{
     height:0;
@@ -959,7 +936,6 @@ sup{
     margin-bottom: 96px;
     background-color: var(--hospisoftPureWhite);
     padding: 64px 64px;
-    border-radius: 64px;
   }
   .hospisoftFormSteps{
     flex-direction: column;
@@ -975,7 +951,6 @@ sup{
     left: 0;
     top: 100%;
     z-index: 6;
-    border-radius: 0 0 64px 64px;
 }
 #hospisoftForm .hospisoftFreeFormDiv2{
     background-color: var(--hospisoftWhite);
@@ -984,7 +959,6 @@ sup{
     right: 0;
     bottom: 0;
     z-index: 7;
-    border-radius: 64px 0 0 0;
 }
 #hospisoftForm .hospisoftFreeFormDiv3{
     background-color: var(--hospisoftWhite);
@@ -993,7 +967,6 @@ sup{
     right: 0;
     bottom: 8%;
     z-index: 7;
-    border-radius: 0 0 0 0;
 }
 #hospisoftForm .hospisoftFreeFormDiv4{
     background-color: var(--hospisoftPureWhite);
@@ -1002,7 +975,6 @@ sup{
     right: 0;
     bottom: 8%;
     z-index: 8;
-    border-radius: 0 0 64px 0;
 }
   .hospisoftAuthentification #hospisoftIconLArrowRight,
   .hospisoftAuthentification #hospisoftIconLArrowLeft{
@@ -1050,7 +1022,6 @@ sup{
   }
 
     .hospisoftInput,.hospisoftInput:hover, .hospisoftInput:focus{
-        border-radius: 24px;
         padding: 1rem 2rem;
         background-color: var(--hospisoftPureWhite);
         justify-content: space-between;
@@ -1149,7 +1120,6 @@ sup{
   .hospisoftRoundedPureWhite{
     background-color: var(--hospisoftPureWhite);
     border: 2px solid var(--hospisoftWhite);
-    border-radius: 18px;
     padding: 10px 14px 10px 12px;
     cursor: pointer;
     transition: var(--transition);
@@ -1184,7 +1154,6 @@ sup{
   .hospisoftBtnWhite{
     background-color: var(--hospisoftPureWhite);
     padding: 12px 16px 10px;    
-    border-radius: 24px;
     cursor: pointer;
   }
   .hospisoftBtnWhite:hover,
@@ -1223,7 +1192,6 @@ sup{
   #hospisoftDashBoardSideLinks ul li a:visited {
     padding: 16px;
     width: 100%;
-    border-radius: 24px;
     text-decoration: none;
     transition: var(--transition);
   }
@@ -1293,12 +1261,7 @@ sup{
     cursor: pointer;
     position: relative;
   }
-  #hospisoftHeader .hospisoftContainer #hospisoftHeaderRight
-  .hospisoftNotificationsBtn:hover,
-  #hospisoftHeader .hospisoftContainer #hospisoftHeaderRight
-  .hospisoftNotificationsBtn:focus{
-    border-radius: 24px 24px 0 0;
-  }
+
 
   #hospisoftNotificationsCount{
     font-size: 8px;
@@ -1306,7 +1269,6 @@ sup{
     position: absolute;
     top:-10px;
     right:-10px;
-    border-radius:13px;
     background: var(--hospisoftGold);
     background: linear-gradient(135deg, rgba(251,206,117,1) 0%, rgba(204,154,3,1) 100%);    
     color: var(--hospisoftBlue);
@@ -1316,7 +1278,6 @@ sup{
   .hospisoftHeadersubMenu{
     position: absolute;
     padding: 8px 8px;
-    border-radius: 32px 0 32px 32px;
     background-color: var(--hospisoftShadowBlue);
     z-index: -1;
     top: 128px;
@@ -1343,7 +1304,6 @@ sup{
   .hospisoftHeadersubMenu a:hover,
   .hospisoftHeadersubMenu a:focus{
     background-color: var(--hospisoftPureWhite);
-    border-radius: 24px;
   }
 
   #hospisoftIconAccount{
@@ -1359,7 +1319,6 @@ sup{
   }
   .hospisoftNotificationLinks li:nth-child(even){
     background-color: var(--hospisoftWhite);
-    border-radius: 24px;
   }
   .hospisoftHeadersubMenu .hospisoftBtnBlue{
     width: 100%;
@@ -1386,7 +1345,6 @@ sup{
     left: 0;
     top: -32px;
     z-index: 9;
-    border-radius: 64px 64px 0 0;
     }
     #hospisoftDemarrer .hospisoftFreeFormDiv2{
         background-color: var(--hospisoftWhite);
@@ -1395,7 +1353,6 @@ sup{
         right: 0;
         top:0;
         z-index: 5;
-        border-radius: 0 0 0 64px;
     }
     #hospisoftDemarrer .hospisoftFreeFormDiv3{
         background-color: var(--hospisoftWhite);
@@ -1404,7 +1361,6 @@ sup{
         right: 0;
         top: 32px;
         z-index: 7;
-        border-radius: 0 0 0 0;
     }
     #hospisoftDemarrer .hospisoftFreeFormDiv4{
         background-color: var(--hospisoftPureWhite);
@@ -1413,7 +1369,6 @@ sup{
         right: 0;
         top: 32px;
         z-index: 8;
-        border-radius: 0 64px 0 0;
     }
   #hospisoftDemarrer h2{
     padding: 64px;
@@ -1434,17 +1389,14 @@ sup{
   .hospisoftDemarrageFig{
     background-color: var(--hospisoftWhite);
     padding: 64px;
-    border-radius: 64px 64px 0 0;
   }
   .hospisoftBtnWrapper{
     background-color: var(--hospisoftBlue);
     padding: 32px;
-    border-radius: 0 0 48px 48px;
   }
   .hospisoftBtnWrapper a{
     text-align: center;
     padding: 16px;
-    border-radius: 24px;
     width: 100%;
     display: block;
     background-color: var(--hospisoftLightBlue);
@@ -1458,7 +1410,6 @@ sup{
   .hospisoftShortcutsBloc{
     background-color: var(--hospisoftPureWhite);
     padding: 64px 8px 8px 8px;
-    border-radius: 0 32px 32px 32px;
     position: relative;
     flex: 0 1 32%;
   }
@@ -1470,7 +1421,6 @@ sup{
     left: 0;
     top: -32px;
     z-index: 9;
-    border-radius: 64px 64px 0 0;
     }
     .hospisoftShortcutsBloc .hospisoftFreeFormDiv2{
         background-color: var(--hospisoftWhite);
@@ -1479,7 +1429,6 @@ sup{
         right: 0;
         top:0;
         z-index: 5;
-        border-radius: 0 0 0 64px;
     }
     .hospisoftShortcutsBloc .hospisoftFreeFormDiv3{
         background-color: var(--hospisoftWhite);
@@ -1488,7 +1437,6 @@ sup{
         right: 0;
         top: 32px;
         z-index: 7;
-        border-radius: 0 0 0 0;
     }
     .hospisoftShortcutsBloc .hospisoftFreeFormDiv4{
         background-color: var(--hospisoftPureWhite);
@@ -1497,7 +1445,6 @@ sup{
         right: 0;
         top: 32px;
         z-index: 8;
-        border-radius: 0 64px 0 0;
     }
   .hospisoftShortcutsBloc h2{
     padding: 0 32px;
@@ -1513,12 +1460,10 @@ sup{
 
   .hospisoftDashBoardHomeTable{
     padding: 16px;
-    border-radius: 32px;
     width:100%;
   }
   tr{
     padding: 8px 16px;
-    border-radius: 16px;
     display: flex;
     gap:16px;
     justify-content: space-between;
@@ -1569,7 +1514,6 @@ sup{
     background-color: var(--hospisoftBlue);
     color: var(--hospisoftWhite);
     z-index: 9;
-    border-radius: 18px;
   }
   .hospisoftVoirTout:hover,
   .hospisoftVoirTout:focus{
@@ -1583,153 +1527,14 @@ sup{
 
 /* START FOOTER */
 
+main{
+    padding-bottom: 128px;
+}
 #hospisoftFooter{
     background-color: var(--hospisoftDarkerBlue);
     color: var(--hospisoftWhite);
     position: relative;
-}
-.hospisoftDashboardPages #hospisoftFooter{
-    padding: 16px 0;
-    background-color: var(--hospisoftWhite);
-    color: var(--hospisoftDarkerBlue);
-}
-#hospisoftFooterTop .hospisoftFreeFormDiv{
-    background-color: var(--hospisoftDarkBlue);
-    height: 8%;
-    width: calc(50% - 44px);
-    left: 0;
-    top: 0;
-    z-index: 8;
-    border-radius: 0 0 64px 0;
-}
-#hospisoftFooterTop .hospisoftFreeFormDiv2{
-    background-color: var(--hospisoftDarkBlue);
-    height: 8%;
-    width: calc(50% - 44px);
-    right: 0;
-    top: 0;
-    z-index: 8;
-    border-radius: 0 0 0 64px;
-}
-
-.hospisoftLightBottom #hospisoftFooterTop .hospisoftFreeFormDiv,
-.hospisoftLightBottom #hospisoftFooterTop .hospisoftFreeFormDiv2{
-    background-color: var(--hospisoftWhite);
-}
-
-#hospisoftFooter a,
-#hospisoftFooter a:visited{
-    color: var(--hospisoftWhite);
-}
-#hospisoftFooter a:hover,
-#hospisoftFooter a:focus{
-    color: var(--hospisoftShadowBlue);
-}
-#hospisoftFooterTop{
-    background-color: var(--hospisoftDarkerBlue);
-    padding: 8rem 0 4rem;
-    position: relative;
-}
-#hospisoftFooterBottom{
-    border-top: 1px solid var(--hospisoftWhite);
-    padding: 2rem 0;
-    background-color: var(--hospisoftDarkerBlue);
-}
-
-#hospisoftFooterBottom > .hospisoftContainer > .hospisoftFlex{
-    justify-content: space-between;
-}
-#hospisoftFooterBottom > .hospisoftContainer > .hospisoftFlex p{
-    width:fit-content;
-}
-#hospisoftFooterTop .hospisoftContainer > .hospisoftFlex {
-    justify-content: space-between;
-}
-#hospisoftFooterTop .hospisoftContainer > .hospisoftFlex > #hospisoftColophon01{
-    flex: 0 1 40%;
-}
-#hospisoftFooterTop .hospisoftContainer > .hospisoftFlex > .hospisoftFlex{
-    flex: 0 1 50%;
-    gap: 5%;
-}
-
-.hospisoftColophon h3{
-    margin-bottom: 1rem;
-}
-/* hospisoftColophon01 */
-
-#hospisoftColophon01 .hospisoftFlex{
-    flex-direction: column;
-    gap: 10px;
-}
-#hospisoftFooterMenuSocials{
-    flex-direction:row !important;
-    margin-top: 1rem;
-}
-#hospisoftColophon01 a{
-    text-decoration: underline;
-}
-#hospisoftColophon01 #hospisoftIconLogoFooter{
-    height: 32px;
-}
-#hospisoftColophon01 a{
-    font-size: 1.35rem;
-    font-weight: bold;
-}
-/* hospisoftColophon02 */
-#hospisoftColophon02 .hospisoftFlex{
-    gap: 8px;
-}
-.hospisoftFooterLinks{
-    margin-bottom: 1rem;
-}
-#hospisoftColophon02 ul li a{
-    padding: .65rem 0;
-    display: table-cell;
-}
-
-#hospisoftFooterMenuSocials{
-    gap:4px;
-}
-#hospisoftFooterMenuSocials svg{
-    height: 48px;
-}
-#hospisoftFooterMenuSocials a svg{
-    fill: var(--hospisoftWhite);
-}
-#hospisoftFooterMenuSocials a:hover svg,
-#hospisoftFooterMenuSocials a:focus svg{
-    fill: var(--hospisoftLightBlue);
-}
-#hospisoftFooterSocials h3{
-    margin-top: 1rem;
-}
-#hospisoftFooter #hospisoftToTopBtn{
-    display: block;
-    position: absolute;
-    left:50%;
-    top:-32px;
-    border-radius: 32px;
-    padding: 32px 32px 32px 32px;
-    transform: translateX(-50%);
-    background-color: var(--hospisoftDarkerBlue);
-    z-index: 9;
-    line-height: 0;
-}
-#hospisoftFooter #hospisoftToTopBtn svg{
-    height: 25px;
-}
-
-.hospisoftDashboardPages #hospisoftFooter{
-    background-color: transparent;
-    color: var(--hospisoftBlue);
-    padding: 64px 0 32px;
-}
-.hospisoftDashboardPages #hospisoftFooter .hospisoftFlex{
-    justify-content: space-between;
-}
-.hospisoftDashboardPages #hospisoftFooter .hospisoftFlex p{
-    width:max-content;
+    padding: 32px 0;
 }
 /* END FOOTER */
 
@@ -1826,7 +1631,6 @@ table{
     text-align: left;
     text-align-last: left;
     background-color: var(--hospisoftPureWhite);
-    border-radius: 24px;
 }
 table td{
     padding: 16px;
@@ -1865,7 +1669,6 @@ select, select:hover, select:focus{
 
 .hospisoftEncours,.hospisoftDisponible{
     padding: 8px;
-    border-radius: 16px;
 }
 .hospisoftEncours{
     background-color: var(--hospisoftYellow);
@@ -1965,14 +1768,12 @@ select, select:hover, select:focus{
     }
     #hospisoftForm {
         padding: 32px 32px 32px 32px;
-        border-radius: 48px 48px 48px 48px;
         margin-bottom: 32px;
     }
     .hospisoftSocialAuth{
         justify-content: center;
     }
     .hospisoftHeroInnerText {
-        border-radius: 48px 48px 48px 48px;
         padding: 32px 32px 32px 32px;
     }
     .hospisoftHeroInnerText > p {
@@ -1991,11 +1792,9 @@ select, select:hover, select:focus{
         display: none;
     }
     #hospisoftTechnologie .hospisoftHeroInnerText {
-        border-radius: 64px 64px 64px 64px;
         padding: 32px 32px 32px 32px;
     }
     #hospisoftIconTechWrapper {
-        border-radius: 64px 64px 64px 64px;
         padding: 32px 32px 32px 32px;
         background-color: var(--hospisoftPureWhite);
     }
@@ -2021,7 +1820,6 @@ select, select:hover, select:focus{
         display: none;
     }
     .hospisoftPrices {
-        border-radius: 48px 48px 48px 48px;
         padding: 48px 48px 48px 48px;
     }
     #hospisoftHeader .hospisoftContainer #hospisoftHeaderNavLinks ul {
@@ -2040,12 +1838,10 @@ select, select:hover, select:focus{
     }
     #hospisoftAlternativeIconWrapper {
         position: relative;
-        border-radius: 48px 48px 48px 48px;
         padding: 32px 32px 32px 32px;
         background-color: var(--hospisoftPureWhite);
     }
     #hospisoftAlternative > #hospisoftHeroText > .hospisoftContainer > .hospisoftFlex > .hospisoftHeroInnerText {
-        border-radius: 48px 48px 48px 48px;
         padding: 32px 32px 32px 32px;
     }
     #hospisoftAlternative .hospisoftFreeFormDiv,
@@ -2094,11 +1890,7 @@ select, select:hover, select:focus{
         display:none;
     }
     #hospisoftTechnologie .hospisoftHeroInnerText {
-        border-radius: 0 64px 64px 0;
         padding: 32px 32px 32px 32px;
-    }
-    #hospisoftIconTechWrapper {
-        border-radius: 64px 24px 0 64px;
     }
     .hospisoftPrices .hospisoftFreeFormDiv {
         width: 80%;
