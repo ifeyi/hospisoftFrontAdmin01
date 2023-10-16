@@ -1893,7 +1893,6 @@ select, select:hover, select:focus{
 .hospisoftEncours,.hospisoftDisponible{
     padding: 8px;
     border-radius: 16px;
-    font-size: 8px;
 }
 .hospisoftEncours{
     background-color: var(--hospisoftYellow);
@@ -1901,6 +1900,10 @@ select, select:hover, select:focus{
 .hospisoftDisponible{
     background-color: var(--hospisoftBlue);
     color: var(--hospisoftPureWhite);
+}
+
+.hospisoftOtp{
+    gap: 16px;
 }
 
 @media screen and (max-width: 800px) and (min-width: 300px){
