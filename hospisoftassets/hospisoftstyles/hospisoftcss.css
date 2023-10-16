@@ -2065,7 +2065,29 @@ select, select:hover, select:focus{
     border-left: 16px solid var(--hospisoftPureWhite);
     border-right: 16px solid var(--hospisoftPureWhite);
 }
+.hospisoftDesktop{
+    display: block;
+}
+.hospisoftMobile{
+    display: none;
+}
 
+@media screen and (max-width: 800px) and (min-width: 300px) {
+    #hospisoftDashBoardSide p{
+        display: none;
+    }
+    .hospisoftDesktop{
+        display: none;
+    }
+    .hospisoftMobile{
+        display: block;
+    }
+    #hospisoftLogo h1 a{
+        margin: auto;
+        display: block;
+    }
+    #hospisoftDashBoardCollapse{display: none;}
+}
 @media screen and (max-width: 1200px) and (min-width: 900px) {
     #hospisoftHeroText #hospisoftIconGifts {
         height: 88%;
@@ -2104,7 +2126,6 @@ select, select:hover, select:focus{
     #hospisoftAlternative .hospisoftFreeFormDiv3 {
         display: none;
     }
-
 }
 
 @media screen and (min-width:1600px){
