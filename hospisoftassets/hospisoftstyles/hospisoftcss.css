@@ -345,6 +345,15 @@ a.hospisoftFlex{
     background-color: var(--hospisoftPureWhite);
     z-index: 999;
 }
+#hospisoftDashBoardSideHeader {
+    overflow-y: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+#hospisoftDashBoardSideHeader::-webkit-scrollbar { /* WebKit */
+    width: 0;
+    height: 0;
+}
 #hospisoftLogo{
     position: relative;
     z-index: 99999;
