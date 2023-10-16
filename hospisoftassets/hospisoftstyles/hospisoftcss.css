@@ -308,15 +308,6 @@ a.hospisoftFlex{
     gap: 10px;
 }
 
-#hospisoftHeader.hospisoftFixed {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 99;
-    background-color: var(--hospisoftPureWhite);
-    width: 100%;
-    box-shadow: 0 0 100px 0 rgba(0, 0, 0, .1);
-}
 
 /* LOGO & NAVIGATION LINKS */
 
@@ -1284,12 +1275,7 @@ sup{
     display: block;
 }
 
-  .hospisoftDashboardPages .hospisoftFixed #hospisoftHeaderLeft{
-    margin-left: 200px;
-  }
-  .hospisoftCollapsedWrapper .hospisoftFixed #hospisoftHeaderLeft{
-    margin-left: 96px;
-  }
+ 
   /*hospisoftDashBoardSideLinks*/
 
   /*hospisoftDashBoardSideHeader*/
@@ -1307,9 +1293,7 @@ sup{
   #hospisoftDashboardMain #hospisoftHeader{
     background-color: var(--hospisoftPureWhite);
   }
-  .hospisoftDashboardPages #hospisoftHeader.hospisoftFixed {
-    position: relative;
-  }
+
   /*hospisoftDashboardMain*/
 
   /*hospisoftNotificationsCount*/
@@ -1816,9 +1800,7 @@ fieldset{
     border: 0;
 }
 
-.admin-bar .hospisoftFixed{
-    margin-top: 32px;
-}
+
 
 .hospisoftTextHighlighted{
     color: var(--hospisoftGold);
